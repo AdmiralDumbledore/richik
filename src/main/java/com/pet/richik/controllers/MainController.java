@@ -10,4 +10,8 @@ public class MainController {
     public String home(Model model){
         return ("home");
     }
+    @GetMapping("/about")
+    public String about(Model model){
+        return ("about");
+    }
 }
