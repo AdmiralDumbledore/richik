@@ -1,11 +1,19 @@
 <div th:fragment="header">
-    <header class="d-flex justify-content-center py-3">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/home" class="nav-link px-2 link-body-emphasis">Главная</a></li>
+                    <li><a href="/about" class="nav-link px-2 link-body-emphasis">Обо мне</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
+                </ul>
+                <div class="text-center">
+                    <a href="https://github.com/AdmiralDumbledore" class="d-block">
+                        <img src="https://avatars.githubusercontent.com/u/60749220?v=4" width="32" height="32" class="rounded-circle">
+                    </a> Github©
+                </div>
+            </div>
+        </div>
     </header>
 </div>
