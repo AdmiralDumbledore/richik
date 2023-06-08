@@ -13,9 +13,9 @@ public class Paragraph {
 
     private String text;
 
-    private Integer views;
+    private Integer views = 0;
 
-    private Integer rating;
+    private Integer rating = 0;
 
     public Integer getId() {
         return id;
