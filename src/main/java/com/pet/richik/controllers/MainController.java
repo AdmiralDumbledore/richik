@@ -14,4 +14,9 @@ public class MainController {
     public String about(Model model){
         return ("about");
     }
+
+    @GetMapping("/contacts")
+    public String contacts(Model model){
+        return ("contacts");
+    }
 }
