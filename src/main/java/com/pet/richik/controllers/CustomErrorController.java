@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+//@Controller
 public class CustomErrorController implements ErrorController {
 
     @RequestMapping("/error")
@@ -17,6 +17,9 @@ public class CustomErrorController implements ErrorController {
         switch (Integer.valueOf(status.toString())) {
             case (404):
                 model.addAttribute("error", "404. Страница не найдена");
+                break;
+            default:
+                model.addAttribute("error", "Ошибка: " + status.toString() + " Будем посмотреть.");
                 break;
         }
 

@@ -10,13 +10,15 @@ public class Paragraph {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     private String text;
-
     private Integer views = 0;
-
     private Integer rating = 0;
 
+    Paragraph(){}
+    public Paragraph(Integer id, String text){
+        this.id = id;
+        this.text = text;
+    }
     public Integer getId() {
         return id;
     }
